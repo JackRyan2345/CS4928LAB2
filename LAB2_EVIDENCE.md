@@ -15,3 +15,20 @@
 - validateName mixes general validation with package-type-specific
   normalisation. Goal: move the varying name-normalisation algorithm behind a stable policy while preserving every existing
   result.
+
+## Refactor A
+- Files/classes changed; tests after the change; first commit SHA.
+
+## Problem B
+- Why qualifier-key canonicalisation is shared but the two input paths should remain separate.
+
+## Recfactor B
+- Helper introduced; tests after the change; second commit SHA.
+
+## Problem C
+- One sentence explaining why the wider package-type variation is deliberately left for later.
+
+## Final Judgement
+- I limited this slice to name normalization so behavior stays identical and the tests can prove it safe, leaving broader type variation (namespaces, versions, new ecosystems) for a later step.
+
+
